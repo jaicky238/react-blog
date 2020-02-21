@@ -1,13 +1,14 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './style.css';
 
 export default function Header() {
     return (
         <header className="header">
             <nav className="headerMenu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Conact Us</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/contact">Conact Us</Link>
             </nav>
             <div className="socialIcons">
                 socialIcons

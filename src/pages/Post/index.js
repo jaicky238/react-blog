@@ -1,11 +1,15 @@
 import React from 'react'
 import './style.css';
+import BlogPost from '../../components/BlogPost';
+import SideBar from '../../components/SideBar';
 
-function Post() {
+function Post(props) {
+console.log(props)
     return (
-        <div>
-            post
-        </div>
+       <section className="container">
+           <BlogPost {...props}/>
+           <SideBar/>
+        </section>
     )
 }
 
