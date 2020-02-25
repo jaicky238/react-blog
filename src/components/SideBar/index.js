@@ -2,6 +2,7 @@ import React, {useEffect,useState} from 'react'
 import blogData from '../../data/blog.json'
 import Card from '../HOC/Card'
 import {Link} from 'react-router-dom';
+import SocialNetworkCard from '../SocialNetworkCard'
 import './style.css'
 
 function SideBar() {
@@ -12,7 +13,7 @@ function SideBar() {
         const posts = blogData.data;
         setPosts(posts)
 
-    })
+    },[])
 
     return (
         <div className="sidebarContainer">
@@ -31,6 +32,7 @@ function SideBar() {
             <Card style={{marginBottom:"20px",padding:"10px",boxSizing: "border-box"}}>
                 <div className="cardHeader">
                     <span>Social Network</span>
+                    <SocialNetworkCard/>
                 </div>
             </Card>
 
@@ -41,7 +43,7 @@ function SideBar() {
                 {
                  posts.map(post =>{
                     return (
-                        <Link to={`/post/${post.id}`}>
+                        <Link key={post.id} to={`/post/${post.id}`}>
                         <div className="recentPost">
                             <h3>{post.blogTitle}</h3>
                             <span>{post.postedOn}</span>

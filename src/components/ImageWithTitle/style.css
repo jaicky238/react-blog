@@ -1,0 +1,37 @@
+.imageBox{
+    position: relative;
+    height: 150px;;
+}
+.titleBox{
+    background: url('../../assets/title.png') repeat-x;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
+}
+.post-tag {
+    display: inline-block;
+    padding: 5px;
+    background: #73b3df;
+    color: #fff;
+    font-family: "Oswald",sans-serif;
+    letter-spacing: .6px;
+    font-weight: 400!important;
+    list-style: none;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+.post-title {
+    line-height: 1.5em;
+    margin: 5px 0 5px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color:white;
+}

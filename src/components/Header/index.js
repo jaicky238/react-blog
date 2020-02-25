@@ -10,9 +10,7 @@ export default function Header() {
             <Link to="/about">About Us</Link>
             <Link to="/contact">Conact Us</Link>
             </nav>
-            <div className="socialIcons">
-                socialIcons
-            </div>
+           
         </header>
     )
 }
